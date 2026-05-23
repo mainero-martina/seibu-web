@@ -279,3 +279,41 @@ section {
   color: #444;
   letter-spacing: 0.1em;
 }
+@media (max-width: 768px) {
+  .nav {
+    padding: 1rem 1.2rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  #hero {
+    padding: 0 1.2rem 3rem;
+  }
+
+  section {
+    padding: 4rem 1.2rem;
+  }
+
+  .section-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .about-body,
+  .revista-body,
+  .contacto-body {
+    margin-left: 0;
+  }
+
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 1.5rem 1.2rem;
+    text-align: center;
+  }
+}
