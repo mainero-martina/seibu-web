@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <nav className="nav">
-        <span className="nav-logo" onClick={reproducirAudio}>SEIBU</span>
+        <span className="nav-logo" onClick={reproducirAudio}>SEIBU corp</span>
         <ul className="nav-links">
           <li><a href="#nosotros">Nosotros / About</a></li>
           <li><a href="#proyectos">Proyectos / Projects</a></li>
@@ -24,7 +24,7 @@ function App() {
       <section id="hero">
         <div className="hero-tag">Argetina — Multimedia</div>
         <h1 className="hero-title">
-          <span className="blue">SEIBU</span><br />
+          <span className="blue">SEIBU corp</span><br />
           PRODUCCIONES
         </h1>
         <p className="hero-sub">Producción, creación y difusión de artes multimediales</p>
