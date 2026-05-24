@@ -140,7 +140,7 @@ body {
 
 .hero-tag {
   font-family: var(--courier);
-  font-size: 0.75rem;
+  font-size: 1.5rem;
   letter-spacing: 0.15em;
   color: #ffffff;
   margin: 1.5rem;
@@ -333,14 +333,14 @@ section {
 
 /* FOOTER */
 .footer {
-  padding: 2rem 2.5rem;
   display: flex;
   justify-content: center;
 }
 
 .footer span {
+  margin-top: 6rem;
   font-family: var(--courier);
-  font-size: 1cqb;
+  font-size: 1rem;
   color: #ffffff;
   letter-spacing: 0.1em;
 }
@@ -353,16 +353,14 @@ section {
   background: none;
   border: none;
   border-top: 1px solid #222;
-  border-bottom: 1px solid #222;
   color: var(--blanco);
   font-family: var(--helvetica);
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 1.5rem 0;
+  padding: 1.5rem 7rem;
   cursor: pointer;
-  margin-top: 3rem;
   transition: color 0.2s;
 }
 
@@ -454,7 +452,7 @@ section {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .equipo-grid {
     grid-template-columns: 1fr;
   }

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import seibuIcon from '../assets/logo.jpg'
 import audioSeibu from '../assets/SeibuCorp.mp3'
 
+
 function Nav() {
   const [menuAbierto, setMenuAbierto] = useState(false)
 
