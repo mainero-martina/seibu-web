@@ -3,7 +3,7 @@ import solHerrera from '../assets/sol_herrera.jpeg'
 import pedroPontoriero from '../assets/pedro_pontoriero.jpeg'
 import manuelPemberton from '../assets/manuel_pemberton.jpeg'
 import julietaPla from '../assets/julieta_pla.jpeg'
-import mercedesPallotti from '../assets/mercedes_pallotti.jpeg'
+//import mercedesPallotti from '../assets/mercedes_pallotti.jpeg'
 import julianGonzalez from '../assets/julian_gonzalez.jpeg'
 import BautistaPoncedeleon from '../assets/bautista_poncedeleon.jpeg'
 import nicolasBuffarini from '../assets/nicolas_buffarini.jpeg'
@@ -47,7 +47,7 @@ export const equipo = [
     bio: 'Breve descripción de la persona y su trabajo dentro del colectivo.',
     mail: 'email@ejemplo.com',
     ig: 'https://www.instagram.com/mechipallotti/',
-    foto: mercedesPallotti
+    foto: null
   },
   {
     nombre: 'Manuel Pemberton',
