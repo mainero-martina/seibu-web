@@ -1,15 +1,23 @@
 import { useState } from 'react'
 import { equipo } from '../data/equipo'
-import igIcon from '../assets/ig.png'
-import mailIcon from '../assets/mail.png'
+import EquipoRed from './EquipoRed'
 import '../App.css'
 
 function Equipo() {
   const [equipoAbierto, setEquipoAbierto] = useState(false)
+  const [transicionTerminada, setTransicionTerminada] = useState(false)
+
+  const toggleEquipo = () => {
+    if (equipoAbierto) {
+      // se está cerrando: oculta el overflow de una para que no se vea nada raro
+      setTransicionTerminada(false)
+    }
+    setEquipoAbierto(!equipoAbierto)
+  }
 
   return (
     <>
-    <section id="nosotros">
+      <section id="nosotros">
         <div className="section-header">
           <span className="section-num">01</span>
           <h2>Quiénes somos<br /><span className="blue">Who we are</span></h2>
@@ -19,44 +27,22 @@ function Equipo() {
           <p className="en">We are a group of artist and friends who produce, manage and diffuse multimedia arts from Buenos Aires. We make art, generate events and connect the scene.</p>
         </div>
       </section>
+
       <button
         className={`equipo-toggle ${equipoAbierto ? 'abierto' : ''}`}
-        onClick={() => setEquipoAbierto(!equipoAbierto)}
+        onClick={toggleEquipo}
       >
         <span>El equipo / The team</span>
         <span className="equipo-arrow">{equipoAbierto ? '−' : '+'}</span>
       </button>
 
-      <div className={`equipo-grid ${equipoAbierto ? 'visible' : ''}`}>
-        {equipo.map((persona, i) => (
-          <div className="persona-card" key={i}>
-            <div
-              className="persona-foto"
-              style={persona.foto ? {
-                backgroundImage: `url(${persona.foto})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-              } : {}}
-            />
-            <div className="persona-info">
-              <h3>{persona.nombre}</h3>
-              <div className="cuadrado-info">
-                <span className="persona-rol">{persona.rol}</span>
-                <p>{persona.bio}</p>
-                {persona.mail && (
-                  <div className="persona-contacto">
-                    <a href={persona.ig} target="_blank" rel="noreferrer">
-                      <img src={igIcon} alt="Instagram" />
-                    </a>
-                    <a href={`mailto:${persona.mail}`}>
-                      <img src={mailIcon} alt="Mail" />
-                    </a>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        ))}
+      <div
+        className={`equipo-grid ${equipoAbierto ? 'visible' : ''} ${transicionTerminada ? 'sin-recorte' : ''}`}
+        onTransitionEnd={() => {
+          if (equipoAbierto) setTransicionTerminada(true)
+        }}
+      >
+        <EquipoRed equipo={equipo} />
       </div>
     </>
   )

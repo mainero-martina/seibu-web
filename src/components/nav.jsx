@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import seibuIcon from '../assets/logo.jpg'
+import seibuIcon from '../assets/logo.png'
 import audioSeibu from '../assets/SeibuCorp.mp3'
 
 
