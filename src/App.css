@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Code+Pro:wght@400;500&display=swap');
- @import url("https://use.typekit.net/wfn1tst.css");
+@import url("https://use.typekit.net/wfn1tst.css");
+
+@font-face {
+  font-family: 'Powerpuff';
+  src: url('./assets/fonts/powerpuff.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *,
 *::before,
 *::after {
@@ -268,6 +276,10 @@ body::after {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   margin-bottom: 2.5rem;
+}
+
+.hero-title .seibu-font {
+  font-family: 'Powerpuff', var(--titulo);
 }
 #hero {
   position: relative;
