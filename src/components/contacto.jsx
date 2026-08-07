@@ -13,7 +13,7 @@ function Contacto() {
           seibu@seibu.com.ar
         </a>
         <a href="https://instagram.com/seibu.corp" target="_blank" rel="noreferrer" className="contacto-ig">
-          @seibuproducciones
+          @seibu.corp
         </a>
       </div>
             <footer className="footer">
