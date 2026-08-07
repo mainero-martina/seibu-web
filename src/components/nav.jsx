@@ -24,7 +24,7 @@ function Nav() {
       <ul className={`nav-links ${menuAbierto ? 'menu-abierto' : ''}`}>
         <li><a href="#nosotros" onClick={() => setMenuAbierto(false)}>Nosotros / About</a></li>
         <li><a href="#proyectos" onClick={() => setMenuAbierto(false)}>Proyectos / Projects</a></li>
-        <li><a href="#revista" onClick={() => setMenuAbierto(false)}>Revista / Magazine</a></li>
+       {/* <li><a href="#revista" onClick={() => setMenuAbierto(false)}>Revista / Magazine</a></li> */}
         <li><a href="#contacto" onClick={() => setMenuAbierto(false)}>Contacto / Contact</a></li>
       </ul>
     </nav>
