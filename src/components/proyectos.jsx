@@ -36,7 +36,13 @@ function Proyectos() {
                 <div className={`convocatoria-panel ${convocatoriaAbierta ? 'visible' : ''}`}>
                   <h4 className="convocatoria-titulo">Convocatoria abierta</h4>
                   <p className="convocatoria-texto">
-                    Te invitamos a completar este formulario si querés participar de nuestra muestra. Antes deberás leer las bases y condiciones. ¡Muchos éxitos, SEIBU!
+                    SEIBU abre convocatoria para su próxima muestra de arte multimedial. Buscamos obras que muestren el motor que nos mueve — el que es máquina y el que es cuerpo.
+🪜 Espacio Beruti, Chacarita
+ 🫆Exposición: 26.09.2026
+ 🛠️Cierre de convocatoria: 31.08.2026
+Abierto a artistas de cualquier región del país, individuales o colectivos, mayores de 18 años.
+ Es excluyente estar en CABA para las fechas de montaje, muestra y desmontaje: 24.08.2026 al 27.08.2026.
+¿Cómo aplicar? Despues de leer las bases y condiciones, completa el formulario. Muchos SEIBU exitos.
                   </p>
                   <div className="convocatoria-links">
                     
