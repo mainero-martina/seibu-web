@@ -500,6 +500,66 @@ section {
   z-index: 1;
   color: var(--violeta);
 }
+/* CONVOCATORIA (dentro de Proyectos) */
+.proyecto-clickeable {
+  cursor: pointer;
+}
+
+.card-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.convocatoria-arrow {
+  font-size: 1.1rem;
+  font-family: var(--courier);
+  color: var(--azul);
+}
+
+.convocatoria-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.convocatoria-panel.visible {
+  max-height: 500px;
+}
+
+.convocatoria-titulo {
+  font-family: var(--helvetica);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--blanco);
+  margin-top: 1rem;
+}
+
+.convocatoria-texto {
+  font-family: var(--courier);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--violeta);
+  margin-top: 0.6rem;
+}
+
+.convocatoria-link {
+  display: inline-block;
+  font-family: var(--courier);
+  font-size: 0.85rem;
+  color: var(--azul-claro);
+  text-decoration: underline;
+  margin-top: 0.8rem;
+  transition: color 0.2s;
+}
+
+.convocatoria-link:hover {
+  color: var(--azul);
+}
 
 /* REVISTA */
 .revista-body {
