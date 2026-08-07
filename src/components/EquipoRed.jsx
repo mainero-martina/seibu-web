@@ -354,14 +354,14 @@ function EquipoRed({ equipo }) {
                   <h3>{persona.nombre}</h3>
                   <span className="persona-rol">{persona.rol}</span>
                   <p>{persona.bio}</p>
-                  {persona.mail && (
+                {persona.mail && (
                     <div className="persona-contacto">
                       <a href={persona.ig} target="_blank" rel="noreferrer">
                         <img src={igIcon} alt="Instagram" />
                       </a>
-                      <a href={`mailto:${persona.mail}`}>
+                      {/* <a href={`mailto:${persona.mail}`}>
                         <img src={mailIcon} alt="Mail" />
-                      </a>
+                      </a> */}
                     </div>
                   )}
                 </div>
