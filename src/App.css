@@ -547,13 +547,19 @@ section {
   margin-top: 0.6rem;
 }
 
+.convocatoria-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 0.8rem;
+}
+
 .convocatoria-link {
   display: inline-block;
   font-family: var(--courier);
   font-size: 0.85rem;
   color: var(--azul-claro);
   text-decoration: underline;
-  margin-top: 0.8rem;
   transition: color 0.2s;
 }
 
